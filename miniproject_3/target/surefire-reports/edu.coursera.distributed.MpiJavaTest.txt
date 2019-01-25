@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: edu.coursera.distributed.MpiJavaTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.528 sec <<< FAILURE! - in edu.coursera.distributed.MpiJavaTest
+edu.coursera.distributed.MpiJavaTest(edu.coursera.distributed.MpiJavaTest$1)  Time elapsed: 2.526 sec  <<< ERROR!
+java.lang.UnsatisfiedLinkError: Unable to load library 'mpi': Native library (win32-x86-64/mpi.dll) not found in resource path ([file:/C:/Users/himan/Documents/GitHub/Distributed-Programming-In-Java/miniproject_3/target/surefire/surefirebooter7616765130583316563.jar])
+	at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:277)
+	at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:403)
+	at com.sun.jna.Library$Handler.<init>(Library.java:147)
+	at com.sun.jna.Native.loadLibrary(Native.java:502)
+	at com.sun.jna.Native.loadLibrary(Native.java:481)
+	at edu.coursera.distributed.util.MPI$MPILib.<clinit>(MPI.java:20)
+	at edu.coursera.distributed.util.MPI.<init>(MPI.java:77)
+	at edu.coursera.distributed.MpiJavaTest$1.setUp(MpiJavaTest.java:66)
+
